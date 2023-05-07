@@ -20,9 +20,5 @@ export function fetchCountries(name) {
       } else {
         return data;
       }
-    })
-    .then(console.log)
-    .catch(error => {
-      console.log(error);
     });
 }
