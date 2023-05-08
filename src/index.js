@@ -9,9 +9,11 @@ const inputEl = document.querySelector('#search-box');
 const listEl = document.querySelector('.country-list');
 
 function createMarkupForList(arr) {
-  const newListCountry = arr.map(listElem => {
-    return `<li><img src="${listElem.flags.png}" alt="${listElem.flags.alt}" /> <span>${listElem.name.common}</span></li>`;
-  });
+  const newListCountry = arr
+    .map(listElem => {
+      return `<li><img src="${listElem.flags.png}" alt="${listElem.flags.alt}" /> <span>${listElem.name.common}</span></li>`;
+    })
+    .join('');
 }
 
 inputEl.addEventListener(
