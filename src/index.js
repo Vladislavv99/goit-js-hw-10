@@ -19,9 +19,9 @@ function createMarkupForList(arr) {
 
 function createMarkupForCountry(arr) {
   return arr.map(el => {
-    return `<div>
-        <img width="25" src="${el.flags.png}" alt="${el.flags.alt}" />
-        <span>${el.name.common}</span>
+    return `<div class="country">
+        <img width="50" src="${el.flags.png}" alt="${el.flags.alt}" />
+        <span class="country-name">${el.name.common}</span>
       </div>
       <p>Capital: ${el.capital}</p>
       <p>Population: ${el.population}</p>
